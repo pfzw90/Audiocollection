@@ -40,7 +40,7 @@ class Album:
   def __str__(self):
     printable_tracklist = ''
     for track in self.tracklist:
-      printable_tracklist += ('\t' + track.__str__() + '\n')
+      printable_tracklist += ('\t' + str(track) + '\n')
     return f'Album name: \"{self.name}\" \nAlbum author: \"{self.band}\"\nTracks: \n{printable_tracklist}'
   
   def add_track(self, trackname, tracklength):
